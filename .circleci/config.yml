@@ -24,7 +24,7 @@ jobs:
 #      - run: ./vendor/bin/codecept run
       - add_ssh_keys:
           fingerprints:
-            - "35:92:e8:23:90:f1:af:06:e6:cd:98:99:ab:6f:c5:58"
+            - "29:e6:f6:12:5e:7b:bb:c8:8b:cf:23:97:46:13:52:bd"
       - deploy:
           command: |
-              ssh -vy josorio@dev.pagomio.com 'echo "Hola" >> test.txt'
+              ssh -v josorio@dev.pagomio.com 'echo "Hola" >> test.txt'
