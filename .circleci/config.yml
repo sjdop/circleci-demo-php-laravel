@@ -27,5 +27,5 @@ jobs:
             - "29:e6:f6:12:5e:7b:bb:c8:8b:cf:23:97:46:13:52:bd"
       - deploy:
           command: |
-              ssh-keygen -t rsa
+              echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDtr0X6VOe4NzVmY7zm0auaqDjRFB6DvXrSXfSkLwvRkOYjjpaGQtNXsHIPoaqtds6s+0nd6D3Dd8A5xGXjmE/yuwgWM0JE+McSejYziGCR1nEAU9QjaFBtn3mYXlknDcErCCz1846xYBF0bx2F6Cbvuf8GPjM1lvgicPhcZrG9HbF5M5eTprvVpWnBuYhmvhY86Fm66wBcZUyf0W/FBiozNWVWyqOXVbKrGl4ljivr3fsluurEo2VBKvct43nqqUH0+2ME4F/khOZZs/XJ4Sc76Av5+Q8rgYIT4v1ML0gAze8tIAyOLIIHLyXMvlH6ACANY0M2bbcmN+NvHIRJyNhj' >> ~/.ssh/known_hosts
               ssh -v josorio@dev.pagomio.com 'echo "Hola" >> test.txt'
