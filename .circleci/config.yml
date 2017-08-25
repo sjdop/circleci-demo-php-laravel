@@ -24,5 +24,8 @@ jobs:
       - run: ./vendor/bin/codecept run
       - deploy:
         name: Test
-        command:
-          - ssh josorio@dev.pagomio.com 'echo "Hola" >> test.txt'
+        command: |
+          if [ "${CIRCLE_BRANCH}" == "master" ]; then
+            ssh josorio@dev.pagomio.com
+            'echo "Hola" >> test.txt'
+          fi
