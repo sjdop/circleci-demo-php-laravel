@@ -24,4 +24,4 @@ jobs:
 #      - run: ./vendor/bin/codecept run
       - deploy:
           command: |
-              ssh josorio@dev.pagomio.com 'echo "Hola" >> test.txt'
+              ssh -v josorio@dev.pagomio.com 'echo "Hola" >> test.txt'
