@@ -22,6 +22,9 @@ jobs:
 #      - run: php artisan migrate --env=testing --database=sqlite_testing --force
 #      - run: ./vendor/bin/codecept build
 #      - run: ./vendor/bin/codecept run
+      - add_ssh_keys:
+          fingerprints:
+            - "35:92:e8:23:90:f1:af:06:e6:cd:98:99:ab:6f:c5:58"
       - deploy:
           command: |
               ssh -v josorio@dev.pagomio.com 'echo "Hola" >> test.txt'
