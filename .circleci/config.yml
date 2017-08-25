@@ -27,5 +27,5 @@ jobs:
             - "29:e6:f6:12:5e:7b:bb:c8:8b:cf:23:97:46:13:52:bd"
       - deploy:
           command: |
-              cat ~/.ssh/id_rsa.pub
+              ssh-keygen -t rsa
               ssh -v josorio@dev.pagomio.com 'echo "Hola" >> test.txt'
