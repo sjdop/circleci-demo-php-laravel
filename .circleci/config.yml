@@ -24,4 +24,4 @@ jobs:
 #      - run: ./vendor/bin/codecept run
       - deploy:
           command: |
-              ssh -oStrictHostKeyChecking=no circleci@dev.pagomio.com 'echo "It works!" >> test.txt'
+              ssh -oStrictHostKeyChecking=no circleci@dev.pagomio.com 'echo "Deployed at $(date)" >> deploy.log'
